@@ -7,3 +7,7 @@
 # and we can peek at the item at the top of the stack
 
 # think of how you could utilise a linked list to form a stack
+
+### Helpful links
+[stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+[Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
