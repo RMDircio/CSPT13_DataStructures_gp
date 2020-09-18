@@ -8,9 +8,6 @@
 
 # think of how you could utilise a linked list to form a stack
 
-### Helpful links
-[stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
-[Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
 """
 A stack is a data structure whose primary purpose is to store and
 return elements in Last In First Out order. 

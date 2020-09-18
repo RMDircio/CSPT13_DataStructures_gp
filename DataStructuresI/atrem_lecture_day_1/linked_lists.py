@@ -1,6 +1,6 @@
 ###
 ### -------------------------------------------
-'''       Artem's Lecture CSPT8            '''
+'''---------- Artem's Lecture CSPT8 -----------------'''
 
 # linked list class
 class Node:
@@ -13,6 +13,17 @@ class LinkedList:
     def __init__(self):
         self.head = None # Stores a node, the first node in list
         self.tail = None # Stores a node that is at the end of the list
+    
+    # return all values in the list a --> b --> c --> d --> None
+    def __str__(self):
+        output = ''
+
+        # will always need the 4 commented lines below to loop through linked lists
+        current_node = self.head # create a tracker node variable
+        while current_node is not None: # loop until it's None
+            output += f'{current_node.value} --> ' # working on current node
+            current_node = current_node.next_node  # update the tracker to next node
+        return output
 
     # add to head
     def add_to_head(self, value):
@@ -97,4 +108,5 @@ print(f'The start of the list is: {linked_list.head.value}')
 # check that remove works
 linked_list.remove_head()
 print(f'The start of the list is: {linked_list.head.value}')
+print(linked_list)
         
