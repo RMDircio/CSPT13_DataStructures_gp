@@ -33,11 +33,18 @@ class StackA:
 
     def push(self, value):
         self.storage.append(value)
+        self.size += 1
+        # another way with using pop(0) below
+        # self.storage.insert(0, value)
 
     def pop(self):
         if len(self.storage) == 0:
             return None
+        self.size -= 1
         return self.storage.pop()
+        # another way with using insert above
+        # node = self.storage.pop(0)
+        # return node
 
 
 

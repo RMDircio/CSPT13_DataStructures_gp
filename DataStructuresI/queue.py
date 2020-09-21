@@ -65,5 +65,6 @@ class QueueL:
         if self.size == 0:
             return None
         self.size -= 1
-        return self.storage.remove_head()
+        value = self.storage.remove_head()
+        return value
     
